@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Where is the cake???</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="noticeBoard" class="notice">
+        <div class="notice-content">
+            <h2>前情提要</h2>
+            <p>在一個平行宇宙，柯藍、Tina和Jessie一起合租。
+                今天是柯藍<img src="lotus/head.jpeg" alt="icon" class="headicon">20歲生日。
+                她下午14:55回到住所卻發現昨晚20:00回家時放入雪櫃的生日蛋糕不翼而飛。
+                請你幫助她還原真相吧！</p>
+            <button id="enter">Let's go!</button>
+        </div>
+    </div>
+    
+    <div id="who" class="who">
+        <div class="whoContent">
+            <h3>你懷疑是誰拿走了蛋糕？</h3>
+            <p>請選擇你的懷疑對象：</p>
+
+            <div class="radioGroup">
+                <input type="radio" id="suspectTina" name="suspect" value="Tina">
+                <label for="suspectTina">Tina</label> 
+                <input type="radio" id="suspectJessie" name="suspect" value="Jessie">
+                <label for="suspectJessie">Jessie</label>
+            </div>
+            <button id="submit">就是她了！</button>
+            <p id="errorMsg" style="color: red; display: none; margin-top: 10px;">請先選擇懷疑對象！</p>
+        </div>
+    </div>
+
+    <div id="mapOverlay">
+        
+        <img id="reopenNotice" src="background/notice.jpg">
+        <a href="jessieRoom.html" id="jessie_arrow" class="arrow rightArrow">
+            <img src="button/arrow_right.png">
+            <span class="roomLabel">Jessie's room</span>
+        </a>
+
+        <a href="tinaRoom.html" id="tina_arrow" class="arrow leftArrow">
+            <img src="button/arrow_left.png">
+            <span class="roomLabel">Tina's room</span>
+        </a>
+
+        <button id="truthButton" style="display: none;" class="truthButton">
+            <img src="button/knowTruth.png">
+        </button>
+
+        <a href="lotusRoom.html" id="lotus_arrow" class="arrow leftArrowLotus">
+            <img src="button/arrow_left_lotus.png">
+            <span class="roomLabelLotus">進入柯藍房間查看真相</span>
+        </a>
+    </div>
+
+    
+    <script src="work.js"></script>
+</body> 
+</html>
