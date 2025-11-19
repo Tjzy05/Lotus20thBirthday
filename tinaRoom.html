@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Tina's Room</title>
+    <link rel="stylesheet" href="styleTina.css">
+</head>
+<body>
+    <div id="mapOverlay">
+        <a href="index.html" id="backliving" class="rightArrow">
+            <img src="button/arrow_right.png">
+            <span class="roomLabel">Back To Living Room</span>
+        </a>
+        <div id="bedClue" class="clue_hotspot_bed"></div>
+        <div id="deskClue" class="clue_hotspot_desk"></div>
+        <div id="wardrobeClue" class="clue_hotspot_wardrobe"></div>
+        <img src="tina/head.jpeg" id="tinaHead" class="tinaHead">
+
+        <div id="timeLineModal" class="timeLineModal">
+            <div class="timeLineBox">
+                <img src="background/tinaTime.png" class="timeLineBubble">
+                <div class="timeLineWrapper">
+                
+                    <div id="timeLineContent" class="timeLineContent"></div>
+                    <button id="closeTimeLine" class="closeTimeLine">Got it!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="clueModalBed" class="clueModalDesk">
+        <div class="modalContentBed">
+            <h3>線索：</h3>
+            <p>冇摺被褥……還有餘溫，應該是剛離開不久。</p>
+            <button id="closeClueBed">OK!</button>
+        </div>
+    </div>
+    <div id="clueModalDesk" class="clueModalDesk">
+        <div class="modalContentDesk">
+            <h3>線索：</h3>
+            <p>你看見桌上放著一些已經開了包裝的即棄餐具+碗碟。</p>
+            <button id="closeClueDesk">OK!</button>
+        </div>
+    </div>
+    <div id="clueModalWardrobe" class="clueModalWardrobe">
+        <div class="modalContentWardrobe">
+            <h3>線索：</h3>
+            <p>你看見衣櫃門縫夾著一個未吹氣的氣球，地上還有迷你充氣筒。</p>
+            <button id="closeClueWardrobe">OK!</button>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="workTina.js"></script>
+</body> 
+</html>
