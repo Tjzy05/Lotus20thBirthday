@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>Yeahhh</title>
+    <link rel="stylesheet" href="styleLotus.css">
+</head>
+<body>
+    <div id="startupOverlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.9); z-index: 9999; display: flex; justify-content: center; align-items: center; cursor: pointer;">
+        <button id="startButton" style="padding: 20px 40px; font-size: 1.5rem;">點擊查看真相</button>
+    </div>
+    <div id="animationContainer">
+        <img id="animatedImage" src="lotus/truthLotus.jpeg">
+    </div>
+
+    <div id="continueModal" class="modal">
+        <div class="modal-content">
+            <p>真相就是......</p>
+            <button id="continueButton">Continue</button>
+        </div>
+    </div>
+
+    <div id="finalContent" style="display: none;">
+        <h1 id="truthTitle">其實就係 Tina 同 Jessie 想比柯藍 suprise!</h1>
+        <p id="truthText">爛尾 I know. Please don't judge me :)</p>
+        <img src="lotus/truth.png" id="truthImage">
+    </div>
+
+    <audio id="birthdayMusic" src="lotus/truthmusic.mp3" loop muted></audio>
+
+    <script src="workLotus.js"></script>
+</body>
+</html>
